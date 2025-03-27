@@ -1,0 +1,57 @@
+/* Custom transition effects for the card */
+.product-card {
+    transition: transform 0.3s ease;
+    
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  .card-body{
+    padding-left: 3px;
+  }
+  .product-card {
+    width: 100%; /* Responsive */
+    max-width: 550px; /* Ensure cards don’t get too wide */
+    height: 380px; /* Fixed height for consistency */
+  }
+  .image-container {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the image container */
+    overflow: hidden; /* Ensures image is cropped if it overflows */
+  }
+  
+  /* Make product names the same height to align cards */
+  .product-card .card-title {
+    min-height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .add-to-cart-btn { 
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+ 
+
+  @media (min-width: 600px) {
+    .add-to-cart-btn .btn-text {
+      display: none;
+    }
+  }
+  
+  /* On hover, expand the button fully */
+  @media (min-width: 650px) {
+    .add-to-cart-btn:hover {
+      width: 130px;
+    }
+  
+    .add-to-cart-btn:hover .btn-text {
+      display: inline;
+    }
+  }
+  

@@ -1,0 +1,43 @@
+th:nth-child(2n), td:nth-child(2n) {
+    background-color: #d9d5d5; /* Example background color for the first column */
+}
+th:nth-child(2n+1), td:nth-child(2n+1) {
+    background-color: #fcbbbb; /* Example background color for the first column */
+}
+
+
+/* Container holding both the table and the card */
+.table-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between the table and the card */
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Card styling */
+  .vv {
+    flex: 1;
+    max-width: 350px; /* Limit the width for larger screens */
+  }
+  
+  /* Responsive behavior for smaller screens */
+  @media (max-width: 768px) {
+    .tablecardcontainer {
+      flex-direction: column; /* Stack the card under the table on small screens */
+    }
+  
+    .vv {
+      max-width: none; /* Allow the card to take the full width */
+      width: 100%; /* Make sure it uses the full available width */
+    }
+  
+    .table-container {
+      margin-bottom: 20px; /* Add space below the table */
+    }
+  }
+  

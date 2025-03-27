@@ -1,0 +1,15 @@
+/* Sidebar Links */
+.sidebar-link {
+  color: white !important; 
+  padding: 10px 15px;
+  display: block;
+  border-radius: 5px; 
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect */
+.sidebar-link:hover {
+  background: rgba(255, 255, 255, 0.2); /* Light hover effect */
+  color: #00d4ff !important; /* Light blue color on hover */
+  text-decoration: none;
+}

@@ -1,0 +1,77 @@
+/* Category Card */
+.category-card {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+  
+  border-radius: 12px; /* Smooth edges for cards */
+}
+
+.category-card:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Image Styling */
+.category-card img {
+  width: 100%; /* Ensure the image takes the full width of the card */
+  height: 100%;
+  object-fit: cover; /* Makes sure the image covers the area without distorting */
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.category-card:hover img {
+  transform: scale(1.05); /* Slight zoom effect when hovered */
+}
+
+/* Text Overlay */
+.category-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 50%;
+  color: white; /* White text for contrast */
+  padding: 0 15px;
+  background: rgba(0, 0, 0, 0.5); /* Dark background with opacity for readability */
+  border-radius: 8px;
+}
+
+/* Title above the link */
+#aboveunderline {
+  color: #17faf3; /* Bright green color */
+  font-weight: bolder;
+  font-size: 1.6rem; /* Larger font size */
+  margin-bottom: 8px; /* Space between the title and the link */
+  letter-spacing: 1px;
+}
+
+/* Link style with hover */
+#punderline {
+  color:rgb(41, 237, 6); /* Blue color */
+  font-weight: bolder;
+  font-size: 1.1rem; /* Slightly larger font size for the link */
+  text-decoration: none; /* No underline by default */
+  letter-spacing: 0.5px;
+}
+
+#punderline:hover {
+  text-decoration: underline;
+
+}
+
+/* Optional: Adjust for smaller screens */
+@media (max-width: 768px) {
+  .category-card {
+    height: 250px; /* Slightly smaller cards on mobile */
+  }
+
+  #aboveunderline {
+    font-size: 1.4rem; /* Slightly smaller title */
+  }
+
+  #punderline {
+    font-size: 1rem; /* Smaller link font on mobile */
+  }
+}

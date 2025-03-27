@@ -1,0 +1,35 @@
+/* Apply hover effect on the links */
+.navbar-link {
+    text-decoration: none;
+    color: #000; /* Default color */
+  }
+  
+  .navbar-link:hover {
+    text-decoration: underline !important; /* Force underline */
+    color: rgb(84, 166, 243) !important; /* Force color change on hover */
+  }
+  .navbar-lin:hover {
+    text-decoration: underline !important; /* Force underline */
+    color: rgb(150, 198, 244) !important; /* Force color change on hover */
+  }
+  .header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+
+}
+.wra {
+  animation: bounceIn 1s ease-in-out, glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #e9ff6b;
+  }
+  100% {
+    text-shadow: 0 0 15px #f73333;
+  }
+}
+

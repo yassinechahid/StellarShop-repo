@@ -1,0 +1,58 @@
+.product-card {
+  width: 100%; /* Responsive width */
+  max-width: 250px; /* Ensure uniform size */
+  height: 380px; /* Fixed height */
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Needed for absolute positioning */
+  overflow: visible; /* Ensure the button expands outside */
+
+}
+
+/* Ensure all images have the same size */
+.product-card img {
+   
+  padding-bottom: 13px;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  
+  color: white;
+  border: none;
+  
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  position: absolute; /* Prevent it from affecting layout */
+  right: 0; /* Align to the right */
+  bottom: 10px; /* Adjust positioning */
+  z-index: 10; /* Ensure it's above stars */
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Default: Show only icon on large screens */
+@media (min-width: 992px) {
+  .add-to-cart-btn {
+   
+    justify-content: center;
+    
+  }
+
+  .add-to-cart-btn .btn-text {
+    display: none;
+  }
+
+  /* Expand on hover */
+  .add-to-cart-btn:hover {
+    width: auto;
+
+  }
+
+  .add-to-cart-btn:hover .btn-text {
+    display: inline;
+  }
+}

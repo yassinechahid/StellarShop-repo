@@ -1,0 +1,44 @@
+/* Link styling */
+#categorycss {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Hover effect for the entire link */
+  #categorycss:hover {
+    text-decoration: underline;
+    color: rgb(6, 6, 231);
+    cursor: pointer;
+    
+  }
+  
+  /* Circle styling */
+  .w-2 {
+    width: 10px;       /* Size of the circle */
+    height: 10px;      /* Size of the circle */
+    border-radius: 50%;/* Makes the div round */
+    border: 2px solid rgb(238, 18, 18); /* Default border color */
+    margin-right: 8px; /* Space between circle and text */
+  }
+  
+  /* Hover effect for the circle inside the link */
+  #categorycss:hover .w-2 {
+    background-color: rgb(6, 6, 231); /* Circle background color */
+    border-color: rgb(6, 6, 231);     /* Circle border color */
+    text-decoration: underline;
+  }
+#lihover:hover{
+    text-decoration: underline;
+
+}
+@keyframes zoomInOut {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.shop-now-btn {
+    animation: zoomInOut 1.5s infinite ease-in-out;
+}
